@@ -9,6 +9,7 @@ int main(int argc, char *argv[])
     MainWindow w;
     w.setWindowTitle("Rsp Qt App");
 
+    w.showMaximized();
     w.show();
     
     return a.exec();

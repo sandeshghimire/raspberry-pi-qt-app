@@ -8,8 +8,12 @@
 #include <QFile>
 
 
+
 class RspDatabase : public QObject
 {
+    Q_OBJECT
+private:
+
 
 public:
     RspDatabase(QObject *parent = 0);
