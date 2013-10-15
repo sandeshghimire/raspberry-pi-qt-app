@@ -13,6 +13,10 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    rsp_socket.cpp \
+    rsp_database.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    rsp_socket.h \
+    rsp_database.h
