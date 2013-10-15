@@ -16,6 +16,8 @@ public:
     ~RspDatabase();
 public:
     bool openDB();
+    bool addElement();
+    bool removeElement();
     bool deleteDB();
     QSqlError lastError();
 
