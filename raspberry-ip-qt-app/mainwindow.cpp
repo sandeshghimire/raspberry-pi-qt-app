@@ -2,15 +2,21 @@
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 {
-       createActions();
-       createMenus();
-       createToolBars();
-       createStatusBar();
-       updateMenus();
+    mdiArea = new QMdiArea;
+    mdiArea->setHorizontalScrollBarPolicy(Qt::ScrollBarAsNeeded);
+    mdiArea->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);
+    setCentralWidget(mdiArea);
+
+    createActions();
+    createMenus();
+    createToolBars();
+    createStatusBar();
+    updateMenus();
 }
 
 MainWindow::~MainWindow()
 {
+
     
 }
 
@@ -19,6 +25,8 @@ void MainWindow::createMenus()
 {
     fileMenu = menuBar()->addMenu(tr("&File"));
     fileMenu->addAction(newAct);
+
+
 }
 
 void MainWindow::createActions()

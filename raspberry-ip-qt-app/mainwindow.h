@@ -19,11 +19,29 @@ public:
     ~MainWindow();
 private:
     QMdiArea *mdiArea;
+
+
     QMenu *fileMenu;
-    QMenu *editMenu;
-    QMenu *windowMenu;
-    QMenu *helpMenu;
     QAction *newAct;
+    QAction *openAct;
+    QAction *closeAct;
+    QAction *closeAllAct;
+    QAction *exitAct;
+
+    QMenu *editMenu;
+    QAction *cutAct;
+    QAction *copyAct;
+    QAction *pasteAct;
+
+    QMenu *windowMenu;
+    QAction *networkCfgAct;
+    QAction *serialConfigAct;
+
+     QMenu *helpMenu;
+     QAction *aboutCfgAct;
+     QAction *copyrightConfigAct;
+     QAction *helpCfgAct;
+
 
 private:
     void createActions();
